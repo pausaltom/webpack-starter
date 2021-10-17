@@ -13,5 +13,9 @@ export const saludar = ( nombre ) =>{
     document.querySelector('#app').append(img);
 }
 
+export const recibirUser = async()=>{
+    const resp = await fetch('https://reqres.in/api/users?page=2');
+    return await resp.json();
+}
 
     
